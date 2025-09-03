@@ -4,7 +4,7 @@ module "resource-group" {
   location = var.location
   tags     = var.tags
 }
-
+#
 module "law" {
   source              = "../modules/log-analytics"
   location            = module.resource-group.location
